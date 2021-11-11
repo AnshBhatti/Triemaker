@@ -1,0 +1,1 @@
+web: bin/start-nginx gunicorn --workers 1 server:app
