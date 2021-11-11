@@ -27,7 +27,7 @@ For further details, check `README_client.md`.
 
 - `/suggest/<prefix>`: The CLI will send a GET request to this URL path if the user wants to obtain autocomplete suggestions for the prefix
 
-- `/display`
+- `/display`: The CLI will send a GET request to this URL path, getting back a top-down configuration of the tree.
 
 ### Procfile
 - Specifies information about the WSGI (Web Service Gateway Interface) to host the Flask app on Heroku
