@@ -19,15 +19,15 @@ For example usage of these functions, please check `README_client.md`.
 - Uses Flask to map URL routes to functions performed on the global trie in `trie.py`
 
 #### URL Paths
-- `/add/<keyword>`: The CLI will send a GET request to this URL path if the user wants to add a keyword in the trie
+- `/add/<keyword>`: The CLI will send a GET request to this URL path of the server if the user wants to add a keyword in the trie
 
-- `/remove/<keyword>`: The CLI will send a GET request to this URL path if the user wants to remove a keyword if it exists in the trie
+- `/remove/<keyword>`: The CLI will send a GET request to this URL path of the server if the user wants to remove a keyword if it exists in the trie
 
-- `/check/<keyword>`: The CLI will send a GET request to this URL path if the user wants to check whether a keyword exists
+- `/check/<keyword>`: The CLI will send a GET request to this URL path of the server if the user wants to check whether a keyword exists
 
-- `/suggest/<prefix>`: The CLI will send a GET request to this URL path if the user wants to obtain autocomplete suggestions for the prefix
+- `/suggest/<prefix>`: The CLI will send a GET request to this URL path of the server if the user wants to obtain autocomplete suggestions for the prefix
 
-- `/display`: The CLI will send a GET request to this URL path, getting back a top-down configuration of the tree.
+- `/display`: The CLI will send a GET request to this URL path of the server, getting back a top-down configuration of the tree.
 
 ### `Procfile`
 - Specifies information about the WSGI (Web Service Gateway Interface) to host the Flask app on Heroku
