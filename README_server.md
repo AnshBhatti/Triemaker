@@ -35,4 +35,6 @@ For further details, check `README_client.md`.
 - One worker (process) is used to maintain the global state
 - For prototype purposes, maximum of 10 threads will be used (so max 10 concurrent processes)
 
-Note: This server is hosted under free tier at Heroku, so one hour or more of inactivity will reset the global trie.
+Notes: 
+- This server is hosted under free tier at Heroku, so one hour or more of inactivity will reset the global trie.
+- The server link itself does not provide any interface. Any interfacing must be done through the CLI and/or performing requests to the above URL patterns.
