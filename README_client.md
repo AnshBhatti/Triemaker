@@ -6,7 +6,7 @@ Users can download `dist/client.exe` from this directory to operate on the trie.
 
 ### Add keyword
 
-The command `add [keyword]` will add the keyword to the global trie. The `add` function accepts only one argument. Providing less or more will cause the operation to fail. The CLI will return the status of the operation, whether it passed or failed. 
+The command `add [keyword]` will add the keyword to the global trie. The `add` function accepts only one argument. Providing less or more will cause the operation to fail. The CLI will return the status of the operation, whether it passed or failed. If the keyword already exists, the operation will show as successful, but there will be no change to the trie.
 
 ### Remove keyword
 
