@@ -13,7 +13,7 @@ The server is a Flask application hosted on Heroku (a PaaS) at https://triemaker
 - `suggest(prefix)`: This function will provide autocomplete suggestions. If there are no suggestions, nothing is returned
 - `display()`: This function will return a top-down display of the tree on the CLI.  
 
-For further details, check `README_client.md`.
+For example usage of these functions, please check `README_client.md`.
 
 ### `server.py`
 - Uses Flask to map URL routes to functions performed on the global trie in `trie.py`
