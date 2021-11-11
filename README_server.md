@@ -32,3 +32,5 @@ For further details, check `README_client.md`.
 ### Procfile
 - Specifies information about the WSGI (Web Service Gateway Interface) to host the Flask app on Heroku
 - Gunicorn and NGINX are used in pair to handle requests directed to the Flask app
+- One worker (process) is used to maintain the global state
+- For prototype purposes, maximum of 10 threads will be used (so max 10 concurrent processes)
