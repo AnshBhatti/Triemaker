@@ -1,7 +1,3 @@
-# Triemaker
-
-Triemaker is a system that stores keywords and allows search in an efficient manner. It hosts a global prefix trie (string search tree) on which users around the world can perform various operations on by the use of a client CLI. 
-
 ## Client Usage
 
 Users can download `dist/client.exe` from this directory to operate on the trie. After running the executable, the CLI will open and users can play around after reading the instructions. Upon reading each valid instruction, the CLI will make requests to the server accordingly (see `README_server.md` for details on the communication to server). Below are some details on how the CLI can be used to perform certain operations on keywords.
