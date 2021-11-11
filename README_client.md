@@ -18,7 +18,7 @@ The command `check [keyword]` will check whether the keyword exists in the globa
 
 ### Suggest prefix
 
-The command `suggest [prefix]` will return the appropriate autocomplete suggestions (keywords with this prefix) in the global trie. The `check` function accepts only one argument. Providing less or more will cause the operation to fail. The CLI will return the status of the operation. If the operation passed, the CLI will list the words from the trie that match the prefix.
+The command `suggest [prefix]` will return the appropriate autocomplete suggestions (keywords with this prefix) in the global trie. The `suggest` function accepts only one argument. Providing less or more will cause the operation to fail. The CLI will return the status of the operation. If the operation passed, the CLI will list the words from the trie that match the prefix.
 
 ### Display
 
