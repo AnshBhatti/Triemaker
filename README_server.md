@@ -38,3 +38,4 @@ For example usage of these functions, please check `README_client.md`.
 Notes: 
 - This server is hosted under free tier at Heroku, so one hour or more of inactivity will reset the global trie.
 - The server link itself does not provide any interface. Any interfacing must be done through the CLI and/or performing requests to the above URL patterns.
+- The server may initially take a few seconds to respond, as it needs to "wake up from sleep" after long duration of inactivity.
