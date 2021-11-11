@@ -79,6 +79,8 @@ def suggest(prefix, i, st, k):
         for j in range(len(suggestions)-1, -1, -1):
             del suggestions[j]
     if i < len(prefix):
+        if i not in layers:
+            return
         not_found = True
         for each in layers[i]:
             if (k == None or each in trie[k]) and layers[i][each] == prefix[i]:
@@ -98,15 +100,17 @@ def suggest(prefix, i, st, k):
 
 def check(keyword, i, key):
     not_found = True
+    if i not in layers:
+        return False
     for each in layers[i]:
         if (key == None or each in trie[key]) and layers[i][each] == keyword[i]:
             not_found = False
             key = each
+    if not_found:
+        return False
     if i == len(keyword)-1:
         print(key, leaf)
         return key in leaf
-    if not_found:
-        return False
     return check(keyword, i+1, key)
 
 
