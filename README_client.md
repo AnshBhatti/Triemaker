@@ -6,19 +6,19 @@ Users can download `dist/client.exe` from this directory to operate on the trie.
 
 ### Add keyword
 
-The command `add [keyword]` will add the keyword to the global trie. The `add` function accepts only one argument. Providing less or more will cause the operation to fail. The CLI will return the status of the operation, whether it passed or failed. If the keyword already exists, the operation will show as successful, but there will be no change to the trie.
+The command `add keyword` will add the keyword to the global trie. The `add` function accepts only one argument. Providing less or more will cause the operation to fail. The CLI will return the status of the operation, whether it passed or failed. If the keyword already exists, the operation will show as successful, but there will be no change to the trie.
 
 ### Remove keyword
 
-The command `remove [keyword]` will remove the keyword from the global trie. The `remove` function accepts only one argument. Providing less or more will cause the operation to fail. If the keyword does not already exist in the trie, the operation will fail and the CLI will indicate this error. The CLI will return the status of the operation, whether it passed or failed. 
+The command `remove keyword` will remove the keyword from the global trie. The `remove` function accepts only one argument. Providing less or more will cause the operation to fail. If the keyword does not already exist in the trie, the operation will fail and the CLI will indicate this error. The CLI will return the status of the operation, whether it passed or failed. 
 
 ### Check keyword
 
-The command `check [keyword]` will check whether the keyword exists in the global trie. The `check` function accepts only one argument. Providing less or more will cause the operation to fail. The CLI will return the status of the operation, whether it passed or failed. If the operation passed, the CLI will indicate "True" if the keyword exists ("False" otherwise).
+The command `check keyword` will check whether the keyword exists in the global trie. The `check` function accepts only one argument. Providing less or more will cause the operation to fail. The CLI will return the status of the operation, whether it passed or failed. If the operation passed, the CLI will indicate "True" if the keyword exists ("False" otherwise).
 
 ### Suggest prefix
 
-The command `suggest [prefix]` will return the appropriate autocomplete suggestions (keywords with this prefix) in the global trie. The `suggest` function accepts only one argument. Providing less or more will cause the operation to fail. The CLI will return the status of the operation. If the operation passed, the CLI will list the words from the trie that match the prefix.
+The command `suggest prefix` will return the appropriate autocomplete suggestions (keywords with this prefix) in the global trie. The `suggest` function accepts only one argument. Providing less or more will cause the operation to fail. The CLI will return the status of the operation. If the operation passed, the CLI will list the words from the trie that match the prefix.
 
 ### Display
 
