@@ -1,6 +1,6 @@
 # Server Usage
 
-The server is a Flask application hosted on Heroku (a PaaS) at https://triemaker.herokuapp.com using gunicorn and nginx. The client CLI performs GET requests to certain URL paths on this server to execute commands and operate on the global trie. There are two files in charge of the server's functionality.
+The server is a Flask application hosted on Heroku (a PaaS) at https://triemaker.herokuapp.com using gunicorn and nginx. The client CLI performs GET requests to certain URL paths on this server to execute commands and operate on the global trie. There are three files in charge of the server's functionality. 
 
 ### `trie.py`
 - Maintains the data structures representing the global trie
@@ -29,8 +29,10 @@ For further details, check `README_client.md`.
 
 - `/display`: The CLI will send a GET request to this URL path, getting back a top-down configuration of the tree.
 
-### Procfile
+### `Procfile`
 - Specifies information about the WSGI (Web Service Gateway Interface) to host the Flask app on Heroku
 - Gunicorn and NGINX are used in pair to handle requests directed to the Flask app
 - One worker (process) is used to maintain the global state
 - For prototype purposes, maximum of 10 threads will be used (so max 10 concurrent processes)
+
+Note: This server is hosted under free tier at Heroku, so one hour or more of inactivity will reset the global trie.
