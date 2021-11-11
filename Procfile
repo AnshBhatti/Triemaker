@@ -1,1 +1,1 @@
-web: bin/start-nginx gunicorn --workers 1 server:app
+web: bin/start-nginx gunicorn --workers=1 --threads=10 server:app
