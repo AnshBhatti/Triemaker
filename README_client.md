@@ -1,5 +1,7 @@
 ## Client Usage
 
+![CLI image](client_example_images/CLI_view.JPG)
+
 Users can download `dist/client.exe` from this directory to operate on the trie. After running the executable, the CLI will open and users can play around after reading the instructions. Upon reading each valid instruction, the CLI will make requests to the server accordingly (see `README_server.md` for details on the communication to server). Below are some details on how the CLI can be used to perform certain operations on keywords.
 
 ### Add keyword
