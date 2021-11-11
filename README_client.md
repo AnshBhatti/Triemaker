@@ -38,6 +38,6 @@ The command `display` will return a primitive top-down arrangement of the trie, 
 - Colombia
 - Cuba
 
-Every shown node (letter) is a child of the rightmost node above and to the left of this node, where every child represents the letter ahead of the prefix behind it. Every word is represented by a path from the top line in the display to the bottom line in the display, starting from a root node and ending at a leaf node (nodes in the bottommost line). 
-
 ![display example](client_example_images/sample_trie.JPG)
+
+Every shown node (letter) is a child of the rightmost node above and to the left of this node, where every child represents the letter ahead of the prefix behind it. Every word is represented by a path from the top line in the display to the bottom line in the display, starting from a root node and ending at a leaf node (nodes in the bottommost line). 
